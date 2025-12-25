@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skumshamma Real Estate | UAE Properties</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background-color: #f4f4f4; color: #333; }
+        
+        /* Hero Section */
+        header { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover; background-position: center;
+            height: 80vh; color: white; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center; padding: 20px;
+        }
+        header h1 { font-size: 3rem; margin-bottom: 10px; }
+        
+        /* Property Cards */
+        .container { max-width: 1100px; margin: 50px auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .price { color: #27ae60; font-weight: bold; font-size: 1.2rem; }
+        
+        /* Contact Button */
+        .btn { display: inline-block; background: #2c3e50; color: white; padding: 12px 25px; 
+               text-decoration: none; border-radius: 5px; margin-top: 20px; transition: 0.3s; }
+        .btn:hover { background: #34495e; }
+        
+        footer { background: #2c3e50; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Find Your Dream Home in UAE</h1>
+    <p>Luxury Apartments & Villas at Best Prices</p>
+    <a href="#listings" class="btn">View Properties</a>
+</header>
+
+<div class="container" id="listings">
+    <h2 style="text-align:center; margin-bottom: 40px;">Featured Properties</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=600&q=80" alt="Apartment">
+            <div class="card-content">
+                <h3>Luxury Apartment - Dubai Marina</h3>
+                <p>2 BHK | Fully Furnished | Sea View</p>
+                <p class="price">AED 1,200,000</p>
+                <a href="https://wa.me/YOUR_NUMBER" class="btn">Enquire Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80" alt="Villa">
+            <div class="card-content">
+                <h3>Modern Villa - Abu Dhabi</h3>
+                <p>4 BHK | Private Pool | Near Park</p>
+                <p class="price">AED 3,500,000</p>
+                <a href="https://wa.me/YOUR_NUMBER" class="btn">Enquire Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80" alt="Home">
+            <div class="card-content">
+                <h3>Family Home - Sharjah</h3>
+                <p>3 BHK | Garden Area | Near School</p>
+                <p class="price">AED 850,000</p>
+                <a href="https://wa.me/YOUR_NUMBER" class="btn">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p><strong>Skumshamma Real Estate UAE</strong></p>
+    <p>Contact: +971-XX-XXXXXXX | Email: info@skumshamma.com</p>
+    <p style="margin-top:10px; font-size: 0.8rem;">© 2025 Real Estate Portfolio</p>
+</footer>
+
+</body>
+</html>
